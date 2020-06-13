@@ -54,7 +54,7 @@ id2word = evaluate_py3.make_id2word(vocab)
 
 W = glove_py3.train_glove(vocab, cooccur, vector_size=100, iterations=10)
 
-W = evaluate_py3.merge_main_context(W)
+W = evaluate_py3.merge_target_context(W)
 
 
 def test_similarity():

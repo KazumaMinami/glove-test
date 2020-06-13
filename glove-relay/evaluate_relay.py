@@ -11,7 +11,7 @@ def make_id2word(vocab):
 
 
 # シンメトリーなパラメータの平均を計算する。
-def merge_main_context(W, merge_fun=lambda m, c: np.mean([m, c], axis=0),
+def merge_target_context(W, merge_fun=lambda m, c: np.mean([m, c], axis=0),
     normalize=True):
 
     vocab_size = int(len(W) / 2)
